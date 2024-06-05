@@ -16,7 +16,7 @@ Kelompok IT02 :
 
 ## Topologi
 
-![Topologi](https://github.com/samuelyuma/Jarkom-Modul-4-IT02-2024/assets/118542326/a5abf05d-1adf-4fdb-a057-296b5e7792e1)
+![Topologi](./assets/main-topology.png)
 
 ## Rute
 
@@ -75,7 +75,7 @@ Kelompok IT02 :
 
 ### Topologi
 
-![Topologi](https://github.com/samuelyuma/Jarkom-Modul-4-IT02-2024/assets/118542326/bdd8670e-0a4e-4e37-ae3a-18408afa395b)
+![VLSM](./assets/vlsm-topology.png)
 
 ### Pembagian IP
 
@@ -107,7 +107,7 @@ Prefix IP : **192.234**
 
 ### Tree
 
-![VLSM Tree](https://github.com/samuelyuma/Jarkom-Modul-4-IT02-2024/assets/118542326/2a174cba-e0d0-4802-8dc4-b9f1b8becded)
+![VLSM Tree](https://github.com/samuelyuma/Jarkom-Modul-4-IT02-2024/assets/118542326/01f9d883-5c3b-42a5-9691-d65eb659190f)
 
 ### Konfigurasi
 
@@ -829,6 +829,390 @@ PC-Marisa ke Selimau
 
 ### Topologi
 
-### Pembagian IP
+### Penggabungan
+
+#### Langkah 1
+
+#### Langkah 2
+
+#### Langkah 3
+
+#### Langkah 4
+
+#### Langkah 5
+
+#### Langkah 6
+
+#### Langkah 7
+
+#### Langkah 8
+
+Berikut adalah tabel subnet berdasarkan penggabungan yang telah dilakukan
+
+#### I
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="3">Subnet</th>
+      <th colspan="4">Gabungan dari</th>
+      <th rowspan="3">Netmask Akhir</th>
+    </tr>
+    <tr>
+      <th colspan="2">1</th>
+	  <th colspan="2">2</th>
+    </tr>
+	<tr>
+	<th>Subnet</th>
+      <th>Netmask</th>
+      <th>Subnet</th>
+      <th>Netmask</th>
+	</tr>
+	
+  </thead>
+  <tbody>
+    <tr>
+      <td>B1</td>
+      <td>A1</td>
+      <td>/25</td>
+      <td>A2</td>
+      <td>/27</td>
+      <td>/24</td>
+    </tr>
+    <tr>
+      <td>B2</td>
+      <td>A5</td>
+      <td>/30</td>
+      <td>A6</td>
+      <td>/24</td>
+      <td>/23</td>
+    </tr>
+    <tr>
+      <td>B3</td>
+      <td>A14</td>
+      <td>/28</td>
+      <td>A15</td>
+      <td>/21</td>
+      <td>/20</td>
+    </tr>
+    <tr>
+      <td>B4</td>
+      <td>A18</td>
+      <td>/29</td>
+      <td>A19</td>
+      <td>/26</td>
+      <td>/25</td>
+    </tr>
+    <tr>
+      <td>B5</td>
+      <td>A20</td>
+      <td>/25</td>
+      <td>A21</td>
+      <td>/21</td>
+      <td>/20</td>
+    </tr>
+  </tbody>
+</table>
+
+#### II
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="3">Subnet</th>
+      <th colspan="4">Gabungan dari</th>
+      <th rowspan="3">Netmask Akhir</th>
+    </tr>
+    <tr>
+      <th colspan="2">1</th>
+	  <th colspan="2">2</th>
+    </tr>
+	<tr>
+	<th>Subnet</th>
+      <th>Netmask</th>
+      <th>Subnet</th>
+      <th>Netmask</th>
+	</tr>
+	
+  </thead>
+  <tbody>
+    <tr>
+      <td>C1</td>
+      <td>B1</td>
+      <td>/24</td>
+      <td>A3</td>
+      <td>/30</td>
+      <td>/23</td>
+    </tr>
+    <tr>
+      <td>C2</td>
+      <td>B3</td>
+      <td>/20</td>
+      <td>A13</td>
+      <td>/30</td>
+      <td>/19</td>
+    </tr>
+    <tr>
+      <td>C3</td>
+      <td>B4</td>
+      <td>/25</td>
+      <td>A17</td>
+      <td>/29</td>
+      <td>/24</td>
+    </tr>
+  </tbody>
+</table>
+
+#### III
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="3">Subnet</th>
+      <th colspan="4">Gabungan dari</th>
+      <th rowspan="3">Netmask Akhir</th>
+    </tr>
+    <tr>
+      <th colspan="2">1</th>
+	  <th colspan="2">2</th>
+    </tr>
+	<tr>
+	<th>Subnet</th>
+      <th>Netmask</th>
+      <th>Subnet</th>
+      <th>Netmask</th>
+	</tr>
+	
+  </thead>
+  <tbody>
+    <tr>
+      <td>D1</td>
+      <td>C1</td>
+      <td>/23</td>
+      <td>A4</td>
+      <td>/27</td>
+      <td>/22</td>
+    </tr>
+    <tr>
+      <td>D2</td>
+      <td>C2</td>
+      <td>/19</td>
+      <td>A12</td>
+      <td>/23</td>
+      <td>/18</td>
+    </tr>
+    <tr>
+      <td>D3</td>
+      <td>C2</td>
+      <td>/24</td>
+      <td>B5</td>
+      <td>/20</td>
+      <td>/19</td>
+    </tr>
+  </tbody>
+</table>
+
+#### IV
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="3">Subnet</th>
+      <th colspan="4">Gabungan dari</th>
+      <th rowspan="3">Netmask Akhir</th>
+    </tr>
+    <tr>
+      <th colspan="2">1</th>
+	  <th colspan="2">2</th>
+    </tr>
+	<tr>
+	<th>Subnet</th>
+      <th>Netmask</th>
+      <th>Subnet</th>
+      <th>Netmask</th>
+	</tr>
+	
+  </thead>
+  <tbody>
+    <tr>
+      <td>E1</td>
+      <td>D1</td>
+      <td>/22</td>
+      <td>B2</td>
+      <td>/23</td>
+      <td>/21</td>
+    </tr>
+    <tr>
+      <td>E2</td>
+      <td>D2</td>
+      <td>/18</td>
+      <td>A11</td>
+      <td>/30</td>
+      <td>/21</td>
+    </tr>
+    <tr>
+      <td>E3</td>
+      <td>D2</td>
+      <td>/19</td>
+      <td>A16</td>
+      <td>/30</td>
+      <td>/18</td>
+    </tr>
+  </tbody>
+</table>
+
+#### V
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="3">Subnet</th>
+      <th colspan="4">Gabungan dari</th>
+      <th rowspan="3">Netmask Akhir</th>
+    </tr>
+    <tr>
+      <th colspan="2">1</th>
+	  <th colspan="2">2</th>
+    </tr>
+	<tr>
+	<th>Subnet</th>
+      <th>Netmask</th>
+      <th>Subnet</th>
+      <th>Netmask</th>
+	</tr>
+	
+  </thead>
+  <tbody>
+    <tr>
+      <td>F1</td>
+      <td>E1</td>
+      <td>/21</td>
+      <td>A7</td>
+      <td>/30</td>
+      <td>/20</td>
+    </tr>
+    <tr>
+      <td>F2</td>
+      <td>E2</td>
+      <td>/17</td>
+      <td>A10</td>
+      <td>/24</td>
+      <td>/16</td>
+    </tr>
+  </tbody>
+</table>
+
+#### VI
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="3">Subnet</th>
+      <th colspan="4">Gabungan dari</th>
+      <th rowspan="3">Netmask Akhir</th>
+    </tr>
+    <tr>
+      <th colspan="2">1</th>
+	  <th colspan="2">2</th>
+    </tr>
+	<tr>
+	<th>Subnet</th>
+      <th>Netmask</th>
+      <th>Subnet</th>
+      <th>Netmask</th>
+	</tr>
+	
+  </thead>
+  <tbody>
+    <tr>
+      <td>G1</td>
+      <td>F1</td>
+      <td>/20</td>
+      <td>E3</td>
+      <td>/18</td>
+      <td>/19</td>
+    </tr>
+    <tr>
+      <td>G2</td>
+      <td>F2</td>
+      <td>/16</td>
+      <td>A9</td>
+      <td>/30</td>
+      <td>/15</td>
+    </tr>
+  </tbody>
+</table>
+
+#### VII
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="3">Subnet</th>
+      <th colspan="4">Gabungan dari</th>
+      <th rowspan="3">Netmask Akhir</th>
+    </tr>
+    <tr>
+      <th colspan="2">1</th>
+	  <th colspan="2">2</th>
+    </tr>
+	<tr>
+	<th>Subnet</th>
+      <th>Netmask</th>
+      <th>Subnet</th>
+      <th>Netmask</th>
+	</tr>
+	
+  </thead>
+  <tbody>
+    <tr>
+      <td>H1</td>
+      <td>G2</td>
+      <td>/15</td>
+      <td>A8</td>
+      <td>/30</td>
+      <td>/14</td>
+    </tr>
+  </tbody>
+</table>
+
+#### VIII
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="3">Subnet</th>
+      <th colspan="4">Gabungan dari</th>
+      <th rowspan="3">Netmask Akhir</th>
+    </tr>
+    <tr>
+      <th colspan="2">1</th>
+	  <th colspan="2">2</th>
+    </tr>
+	<tr>
+	<th>Subnet</th>
+      <th>Netmask</th>
+      <th>Subnet</th>
+      <th>Netmask</th>
+	</tr>
+	
+  </thead>
+  <tbody>
+    <tr>
+      <td>I1</td>
+      <td>H1</td>
+      <td>/14</td>
+      <td>G1</td>
+      <td>/19</td>
+      <td>/13</td>
+    </tr>
+  </tbody>
+</table>
 
 ### Tree
+
+![CIDR](./assets/cidr-tree.png)
+
+### Pembagian IP
+
+### Konfigurasi
