@@ -43,7 +43,6 @@ Kelompok IT02 :
 | A19         | JAWA > SULAWESI > SW-Sulsel > BELAWA > SW-Tempe > Madini > SW-Tempe > Baru                                                                                    |
 | A20         | JAWA > SULAWESI > SW-Gorontalo > PC-Gorontalo > SW-Gorontalo > PC-Marisa > SW-Gorontalo > MALUKU-UTARA                                                        |
 | A21         | JAWA > SULAWESI > SW-Gorontalo > MALUKU-UTARA > SW-Maluku > Tobelo > SW-Maluku > Morotai > SW-Maluku > Ternate                                                |
-| Total       |                                                                                                                                                               |
 
 ## Area Subnet
 
@@ -76,6 +75,8 @@ Kelompok IT02 :
 
 ### Topologi
 
+![Topologi](https://github.com/samuelyuma/Jarkom-Modul-4-IT02-2024/assets/118542326/bdd8670e-0a4e-4e37-ae3a-18408afa395b)
+
 ### Pembagian IP
 
 Prefix IP : **192.234**
@@ -106,40 +107,132 @@ Prefix IP : **192.234**
 
 ### Tree
 
-![Tree](https://github.com/samuelyuma/Jarkom-Modul-4-IT02-2024/assets/118542326/46d8a3c8-ce12-4c20-8e26-c4743c884e7f)
+![VLSM Tree](https://github.com/samuelyuma/Jarkom-Modul-4-IT02-2024/assets/118542326/2a174cba-e0d0-4802-8dc4-b9f1b8becded)
 
 ### Konfigurasi
 
 #### JAWA (Router)
+
+Interfaces
 
 ```
 Fast Ethernet0/1 (A7)
 - IPv4 Address : 192.234.21.185
 - Subnet Mask : 255.255.255.252
 
-Fast Ethernet1/0 (A8)
-- IPv4 Address : 192.234.21.189
-- Subnet Mask : 255.255.255.252
-
-Fast Ethernet1/1 (A16)
+Fast Ethernet1/0 (A16)
 - IPv4 Address : 192.234.21.205
 - Subnet Mask : 255.255.255.252
+
+Fast Ethernet1/1 (A8)
+- IPv4 Address : 192.234.21.189
+- Subnet Mask : 255.255.255.252
+```
+
+Static Routes
+
+```
+192.234.20.0/25 via 192.234.21.186
+- Network : 192.234.20.0
+- Mask : 255.255.255.128
+- Next Hop : 192.234.21.186
+
+192.234.21.128/27 via 192.234.21.186
+- Network : 192.234.21.128
+- Mask : 255.255.255.224
+- Next Hop : 192.234.21.186
+
+192.234.21.64/27 via 192.234.21.186
+- Network : 192.234.21.64
+- Mask : 255.255.255.224
+- Next Hop : 192.234.21.186
+
+192.234.19.0/24 via 192.234.21.186
+- Network : 192.234.19.0
+- Mask : 255.255.255.0
+- Next Hop : 192.234.21.186
+
+192.234.18.0/24 via 192.234.21.190
+- Network : 192.234.18.0
+- Mask : 255.255.255.0
+- Next Hop : 192.234.21.190
+
+192.234.16.0/23 via 192.234.21.190
+- Network : 192.234.16.0
+- Mask : 255.255.254.0
+- Next Hop : 192.234.21.190
+
+192.234.21.96/27 via 192.234.21.190
+- Network : 192.234.21.96
+- Mask : 255.255.255.224
+- Next Hop : 192.234.21.190
+
+192.234.0.0/21 via 192.234.21.190
+- Network : 192.234.0.0
+- Mask : 255.255.248.0
+- Next Hop : 192.234.21.190
+
+192.234.21.168/29 via 192.234.21.206
+- Network : 192.234.21.168
+- Mask : 255.255.255.248
+- Next Hop : 192.234.21.206
+
+192.234.21.0/26 via 192.234.21.206
+- Network : 192.234.21.0
+- Mask : 255.255.255.192
+- Next Hop : 192.234.21.206
+
+192.234.20.128/25 via 192.234.21.206
+- Network : 192.234.20.128
+- Mask : 255.255.255.128
+- Next Hop : 192.234.21.206
+
+192.234.8.0/21 via 192.234.21.206
+- Network : 192.234.8.0
+- Mask : 255.255.248.0
+- Next Hop : 192.234.21.206
 ```
 
 #### SUMATERA (Router)
 
-```
-Fast Ethernet0/0 (A7)
-- IPv4 Address : 192.234.21.186
-- Subnet Mask : 255.255.255.252
+Interfaces
 
-Fast Ethernet1/0 (A4)
+```
+Fast Ethernet0/0 (A4)
 - IPv4 Address : 192.234.21.65
 - Subnet Mask : 255.255.255.224
+
+Fast Ethernet0/1 (A7)
+- IPv4 Address : 192.234.21.186
+- Subnet Mask : 255.255.255.252
 
 Fast Ethernet1/0 (A5)
 - IPv4 Address : 192.234.21.181
 - Subnet Mask : 255.255.255.252
+```
+
+Static Routes
+
+```
+0.0.0.0/0 via 192.234.21.185
+- Network : 0.0.0.0
+- Mask : 0.0.0.0
+- Next Hop : 192.234.21.185
+
+192.234.20.0/25 via 192.234.21.68
+- Network : 192.234.20.0
+- Mask : 255.255.255.128
+- Next Hop : 192.234.21.68
+
+192.234.21.128/27 via 192.234.21.68
+- Network : 192.234.21.128
+- Mask : 255.255.255.224
+- Next Hop : 192.234.21.68
+
+192.234.19.0/24 via 192.234.21.182
+- Network : 192.234.19.0
+- Mask : 255.255.255.0
+- Next Hop : 192.234.21.182
 ```
 
 #### Samosir (PC)
@@ -147,8 +240,8 @@ Fast Ethernet1/0 (A5)
 ```
 Fast Ethernet0/0 (A4)
 - IPv4 Address : 192.234.21.66
-- Gateway : 192.234.21.65
 - Subnet Mask : 255.255.255.224
+- Default Gateway : 192.234.21.65
 ```
 
 #### Sibandang (PC)
@@ -156,15 +249,17 @@ Fast Ethernet0/0 (A4)
 ```
 Fast Ethernet0/0 (A4)
 - IPv4 Address : 192.234.21.67
-- Gateway : 192.234.21.65
 - Subnet Mask : 255.255.255.224
+- Default Gateway : 192.234.21.65
 ```
 
 #### SUMATERA-UTARA (Router)
 
+Interfaces
+
 ```
 Fast Ethernet0/0 (A4)
-- IPv4 Address : 192.234.21.94
+- IPv4 Address : 192.234.21.68
 - Subnet Mask : 255.255.255.224
 
 Fast Ethernet0/1 (A3)
@@ -172,7 +267,28 @@ Fast Ethernet0/1 (A3)
 - Subnet Mask : 255.255.255.252
 ```
 
+Static Routes
+
+```
+0.0.0.0/0 via 192.234.21.65
+- Network : 0.0.0.0
+- Mask : 0.0.0.0
+- Next Hop : 192.234.21.65
+
+192.234.20.0/25 via 192.234.21.178
+- Network : 192.234.20.0
+- Mask : 255.255.255.128
+- Next Hop : 192.234.21.178
+
+192.234.21.128/27 via 192.234.21.178
+- Network : 192.234.21.128
+- Mask : 255.255.255.224
+- Next Hop : 192.234.21.178
+```
+
 #### ACEH (Router)
+
+Interfaces
 
 ```
 Fast Ethernet0/0 (A3)
@@ -188,13 +304,22 @@ Fast Ethernet1/0 (A2)
 - Subnet Mask : 255.255.255.224
 ```
 
+Static Routes
+
+```
+0.0.0.0/0 via 192.234.21.177
+- Network : 0.0.0.0
+- Mask : 0.0.0.0
+- Next Hop : 192.234.21.177
+```
+
 #### Berawang Tampu (PC)
 
 ```
 Fast Ethernet0/0 (A1)
 - IPv4 Address : 192.234.20.2
-- Gateway : 192.234.20.1
-- Subnet Mask : 255.255.248.128
+- Subnet Mask : 255.255.255.128
+- Default Gateway : 192.234.20.1
 ```
 
 #### Enang-Enang (PC)
@@ -202,8 +327,8 @@ Fast Ethernet0/0 (A1)
 ```
 Fast Ethernet0/0 (A1)
 - IPv4 Address : 192.234.20.3
-- Gateway : 192.234.20.1
-- Subnet Mask : 255.255.248.128
+- Subnet Mask : 255.255.255.128
+- Default Gateway : 192.234.20.1
 ```
 
 #### Starland (PC)
@@ -211,8 +336,8 @@ Fast Ethernet0/0 (A1)
 ```
 Fast Ethernet0/0 (A1)
 - IPv4 Address : 192.234.20.4
-- Gateway : 192.234.20.1
-- Subnet Mask : 255.255.248.128
+- Subnet Mask : 255.255.255.128
+- Default Gateway : 192.234.20.1
 ```
 
 #### Sabang (PC)
@@ -220,8 +345,8 @@ Fast Ethernet0/0 (A1)
 ```
 Fast Ethernet0/0 (A2)
 - IPv4 Address : 192.234.21.130
-- Gateway : 192.234.21.129
-- Subnet Mask : 255.255.248.224
+- Subnet Mask : 255.255.255.224
+- Default Gateway : 192.234.21.129
 ```
 
 #### Lambaro (PC)
@@ -229,11 +354,13 @@ Fast Ethernet0/0 (A2)
 ```
 Fast Ethernet0/0 (A2)
 - IPv4 Address : 192.234.21.131
-- Gateway : 192.234.21.129
-- Subnet Mask : 255.255.248.224
+- Subnet Mask : 255.255.255.224
+- Default Gateway : 192.234.21.129
 ```
 
 #### LAMPUNG (Router)
+
+Interfaces
 
 ```
 Fast Ethernet0/0 (A5)
@@ -245,13 +372,22 @@ Fast Ethernet0/1 (A6)
 - Subnet Mask : 255.255.255.0
 ```
 
+Static Routes
+
+```
+0.0.0.0/0 via 192.234.21.181
+- Network : 0.0.0.0
+- Mask : 0.0.0.0
+- Next Hop : 192.234.21.181
+```
+
 #### Sebuku (PC)
 
 ```
 Fast Ethernet0/0 (A6)
 - IPv4 Address : 192.234.19.3
-- Gateway : 192.234.19.2
 - Subnet Mask : 255.255.255.0
+- Default Gateway : 192.234.19.2
 ```
 
 #### Sebesi (Server)
@@ -259,11 +395,13 @@ Fast Ethernet0/0 (A6)
 ```
 Fast Ethernet0/0 (A6)
 - IPv4 Address : 192.234.19.4
-- Gateway : 192.234.19.2
 - Subnet Mask : 255.255.255.0
+- Default Gateway : 192.234.19.2
 ```
 
 #### KALIMANTAN (Router)
+
+Interfaces
 
 ```
 Fast Ethernet0/0 (A8)
@@ -275,7 +413,38 @@ Fast Ethernet0/1 (A9)
 - Subnet Mask : 255.255.255.252
 ```
 
+Static Routes
+
+```
+0.0.0.0/0 via 192.234.21.189
+- Network : 0.0.0.0
+- Mask : 0.0.0.0
+- Next Hop : 192.234.21.189
+
+192.234.18.0/24 via 192.234.21.194
+- Network : 192.234.18.0
+- Mask : 255.255.255.0
+- Next Hop : 192.234.21.194
+
+192.234.16.0/24 via 192.234.21.194
+- Network : 192.234.16.0
+- Mask : 255.255.254.0
+- Next Hop : 192.234.21.194
+
+192.234.21.96/27 via 192.234.21.194
+- Network : 192.234.21.96
+- Mask : 255.255.255.224
+- Next Hop : 192.234.21.194
+
+192.234.0.0/21 via 192.234.21.194
+- Network : 192.234.0.0
+- Mask : 255.255.248.0
+- Next Hop : 192.234.21.194
+```
+
 #### KALIMANTAN-UTARA (Router)
+
+Interfaces
 
 ```
 Fast Ethernet0/0 (A9)
@@ -291,16 +460,42 @@ Fast Ethernet1/0 (A11)
 - Subnet Mask : 255.255.255.252
 ```
 
+Static Routes
+
+```
+0.0.0.0/0 via 192.234.21.193
+- Network : 0.0.0.0
+- Mask : 0.0.0.0
+- Next Hop : 192.234.21.193
+
+192.234.16.0/23 via 192.234.21.198
+- Network : 192.234.16.0
+- Mask : 255.255.254.0
+- Next Hop : 192.234.21.198
+
+192.234.21.96/27 via 192.234.21.198
+- Network : 192.234.21.96
+- Mask : 255.255.255.224
+- Next Hop : 192.234.21.198
+
+192.234.0.0/21 via 192.234.21.198
+- Network : 192.234.0.0
+- Mask : 255.255.248.0
+- Next Hop : 192.234.21.198
+```
+
 #### Selimau (PC)
 
 ```
 Fast Ethernet0/0 (A10)
 - IPv4 Address : 192.234.18.2
-- Gateway : 192.234.18.1
 - Subnet Mask : 255.255.255.0
+- Default Gateway : 192.234.18.1
 ```
 
 #### KALIMANTAN-TIMUR (Router)
+
+Interfaces
 
 ```
 Fast Ethernet0/0 (A11)
@@ -316,13 +511,32 @@ Fast Ethernet1/0 (A13)
 - Subnet Mask : 255.255.255.252
 ```
 
+Static Routes
+
+```
+0.0.0.0/0 via 192.234.21.197
+- Network : 0.0.0.0
+- Mask : 0.0.0.0
+- Next Hop : 192.234.21.197
+
+192.234.21.96/27 via 192.234.21.202
+- Network : 192.234.21.96
+- Mask : 255.255.255.224
+- Next Hop : 192.234.21.202
+
+192.234.0.0/21 via 192.234.21.202
+- Network : 192.234.0.0
+- Mask : 255.255.248.0
+- Next Hop : 192.234.21.202
+```
+
 #### Bangkirai (Server)
 
 ```
 Fast Ethernet0/0 (A12)
 - IPv4 Address : 192.234.16.2
-- Gateway : 192.234.16.1
 - Subnet Mask : 255.255.254.0
+- Default Gateway : 192.234.16.1
 ```
 
 #### Lamaru (PC)
@@ -330,11 +544,13 @@ Fast Ethernet0/0 (A12)
 ```
 Fast Ethernet0/0 (A12)
 - IPv4 Address : 192.234.16.3
-- Gateway : 192.234.16.1
 - Subnet Mask : 255.255.254.0
+- Default Gateway : 192.234.16.1
 ```
 
 #### KALIMANTAN-SELATAN (Router)
+
+Interfaces
 
 ```
 Fast Ethernet0/0 (A13)
@@ -350,43 +566,54 @@ Fast Ethernet1/0 (A15)
 - Subnet Mask : 255.255.248.0
 ```
 
+Static Routes
+
+```
+0.0.0.0/0 via 192.234.21.201
+- Network : 0.0.0.0
+- Mask : 0.0.0.0
+- Next Hop : 192.234.21.201
+```
+
 #### Angsana (PC)
 
 ```
-Fast Ethernet0/0 (A14)
-- IPv4 Address : 192.234.21.98
-- Gateway : 192.234.21.97
-- Subnet Mask : 255.255.255.224
+Fast Ethernet0/0 (A15)
+- IPv4 Address : 192.234.0.2
+- Subnet Mask : 255.255.248.0
+- Default Gateway : 192.234.0.1
 ```
 
 #### Bajuin (PC)
 
 ```
-Fast Ethernet0/0 (A15)
-- IPv4 Address : 192.234.0.2
-- Gateway : 192.234.0.1
-- Subnet Mask : 255.255.248.0
+Fast Ethernet0/0 (A14)
+- IPv4 Address : 192.234.21.98
+- Subnet Mask : 255.255.255.224
+- Default Gateway : 192.234.21.97
 ```
 
 #### Takisung (PC)
 
 ```
-Fast Ethernet0/0 (A15)
-- IPv4 Address : 192.234.0.3
-- Gateway : 192.234.0.1
-- Subnet Mask : 255.255.248.0
+Fast Ethernet0/0 (A14)
+- IPv4 Address : 192.234.21.99
+- Subnet Mask : 255.255.255.224
+- Default Gateway : 192.234.21.97
 ```
 
 #### Batakan (PC)
 
 ```
-Fast Ethernet0/0 (A15)
-- IPv4 Address : 192.234.0.4
-- Gateway : 192.234.0.1
-- Subnet Mask : 255.255.248.0
+Fast Ethernet0/0 (A14)
+- IPv4 Address : 192.234.21.100
+- Subnet Mask : 255.255.255.224
+- Default Gateway : 192.234.21.97
 ```
 
 #### SULAWESI (Router)
+
+Interfaces
 
 ```
 Fast Ethernet0/0 (A16)
@@ -402,13 +629,37 @@ Fast Ethernet1/0 (A20)
 - Subnet Mask : 255.255.255.128
 ```
 
+Static Routes
+
+```
+0.0.0.0/0 via 192.234.21.205
+- Network : 0.0.0.0
+- Mask : 0.0.0.0
+- Next Hop : 192.234.21.205
+
+192.234.21.0/26 via 192.234.21.162
+- Network : 192.234.21.0
+- Mask : 255.255.255.192
+- Next Hop : 192.234.21.162
+
+192.234.21.168/29 via 192.234.21.163
+- Network : 192.234.21.168
+- Mask : 255.255.255.248
+- Next Hop : 192.234.21.163
+
+192.234.8.0/21 via 192.234.20.132
+- Network : 192.234.8.0
+- Mask : 255.255.248.0
+- Next Hop : 192.234.20.132
+```
+
 #### PC-Gorontalo
 
 ```
 Fast Ethernet0/0 (A20)
 - IPv4 Address : 192.234.20.130
-- Gateway : 192.234.20.129
 - Subnet Mask : 255.255.255.128
+- Default Gateway : 192.234.20.129
 ```
 
 #### PC-Marisa
@@ -416,15 +667,17 @@ Fast Ethernet0/0 (A20)
 ```
 Fast Ethernet0/0 (A20)
 - IPv4 Address : 192.234.20.131
-- Gateway : 192.234.20.129
 - Subnet Mask : 255.255.255.128
+- Default Gateway : 192.234.20.129
 ```
 
 #### BELAWA (Router)
 
+Interfaces
+
 ```
 Fast Ethernet0/0 (A17)
-- IPv4 Address : 192.234.21.166
+- IPv4 Address : 192.234.21.162
 - Subnet Mask : 255.255.255.248
 
 Fast Ethernet0/1 (A19)
@@ -432,13 +685,22 @@ Fast Ethernet0/1 (A19)
 - Subnet Mask : 255.255.255.192
 ```
 
+Static Routes
+
+```
+0.0.0.0/0 via 192.234.21.161
+- Network : 0.0.0.0
+- Mask : 0.0.0.0
+- Next Hop : 192.234.21.161
+```
+
 #### Madini (PC)
 
 ```
 Fast Ethernet0/0 (A19)
 - IPv4 Address : 192.234.21.2
-- Gateway : 192.234.21.1
 - Subnet Mask : 255.255.255.192
+- Default Gateway : 192.234.21.1
 ```
 
 #### Baru (PC)
@@ -446,15 +708,17 @@ Fast Ethernet0/0 (A19)
 ```
 Fast Ethernet0/0 (A19)
 - IPv4 Address : 192.234.21.3
-- Gateway : 192.234.21.1
 - Subnet Mask : 255.255.255.192
+- Default Gateway : 192.234.21.1
 ```
 
 #### MAKASAR (Router)
 
+Interfaces
+
 ```
 Fast Ethernet0/0 (A17)
-- IPv4 Address : 192.234.21.166
+- IPv4 Address : 192.234.21.163
 - Subnet Mask : 255.255.255.248
 
 Fast Ethernet0/1 (A18)
@@ -462,13 +726,22 @@ Fast Ethernet0/1 (A18)
 - Subnet Mask : 255.255.255.248
 ```
 
+Static Routes
+
+```
+0.0.0.0/0 via 192.234.21.161
+- Network : 0.0.0.0
+- Mask : 0.0.0.0
+- Next Hop : 192.234.21.161
+```
+
 #### Galesong (Server)
 
 ```
 Fast Ethernet0/0 (A18)
 - IPv4 Address : 192.234.21.170
-- Gateway : 192.234.21.169
 - Subnet Mask : 255.255.255.248
+- Default Gateway : 192.234.21.169
 ```
 
 #### Topejawa-Takalar (Server)
@@ -476,15 +749,17 @@ Fast Ethernet0/0 (A18)
 ```
 Fast Ethernet0/0 (A18)
 - IPv4 Address : 192.234.21.171
-- Gateway : 192.234.21.169
 - Subnet Mask : 255.255.255.248
+- Default Gateway : 192.234.21.169
 ```
 
 #### MALUKU-UTARA (Router)
 
+Interfaces
+
 ```
 Fast Ethernet0/0 (A20)
-- IPv4 Address : 192.234.20.254
+- IPv4 Address : 192.234.20.132
 - Subnet Mask : 255.255.255.128
 
 Fast Ethernet0/1 (A21)
@@ -492,13 +767,22 @@ Fast Ethernet0/1 (A21)
 - Subnet Mask : 255.255.248.0
 ```
 
+Static Routes
+
+```
+0.0.0.0/0 via 192.234.20.129
+- Network : 0.0.0.0
+- Mask : 0.0.0.0
+- Next Hop : 192.234.20.129
+```
+
 #### Tobelo (PC)
 
 ```
 Fast Ethernet0/0 (A)
 - IPv4 Address : 192.234.8.2
-- Gateway : 192.234.8.1
 - Subnet Mask : 255.255.248.0
+- Default Gateway : 192.234.8.1
 ```
 
 #### Morotai (Server)
@@ -506,8 +790,8 @@ Fast Ethernet0/0 (A)
 ```
 Fast Ethernet0/0 (A)
 - IPv4 Address : 192.234.8.3
-- Gateway : 192.234.8.1
 - Subnet Mask : 255.255.248.0
+- Default Gateway : 192.234.8.1
 ```
 
 #### Ternate (PC)
@@ -515,9 +799,31 @@ Fast Ethernet0/0 (A)
 ```
 Fast Ethernet0/0 (A)
 - IPv4 Address : 192.234.8.4
-- Gateway : 192.234.8.1
 - Subnet Mask : 255.255.248.0
+- Default Gateway : 192.234.8.1
 ```
+
+### Testing
+
+Enang-Enang ke Ternate
+
+![Ternate](https://github.com/samuelyuma/Jarkom-Modul-4-IT02-2024/assets/118542326/363e76e8-4075-4b78-b724-ca4f26ba18bf)
+
+Madini ke Sebesi
+
+![Sebesi](https://github.com/samuelyuma/Jarkom-Modul-4-IT02-2024/assets/118542326/8f05b29b-d433-472c-bd81-18bb26eec893)
+
+Galesong ke Takisung
+
+![Takisung](https://github.com/samuelyuma/Jarkom-Modul-4-IT02-2024/assets/118542326/939beae6-a88c-4312-be84-18b879cfb6c1)
+
+Samosir ke Lamaru
+
+![Lamaru](https://github.com/samuelyuma/Jarkom-Modul-4-IT02-2024/assets/118542326/6a3ddf92-cbeb-40d4-83c2-c2e108e858b6)
+
+PC-Marisa ke Selimau
+
+![Selimau](https://github.com/samuelyuma/Jarkom-Modul-4-IT02-2024/assets/118542326/88bd8e79-aa17-458c-bd8c-7d56ce74b5dd)
 
 ## GNS3 CIDR
 
