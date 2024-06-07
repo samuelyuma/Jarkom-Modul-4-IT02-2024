@@ -132,62 +132,62 @@ Fast Ethernet1/1 (A8)
 Static Routes
 
 ```
-192.234.20.0/25 via 192.234.21.186
+192.234.20.0/25 via 192.234.21.186 (A1)
 - Network : 192.234.20.0
 - Mask : 255.255.255.128
 - Next Hop : 192.234.21.186
 
-192.234.21.128/27 via 192.234.21.186
+192.234.21.128/27 via 192.234.21.186 (A2)
 - Network : 192.234.21.128
 - Mask : 255.255.255.224
 - Next Hop : 192.234.21.186
 
-192.234.21.64/27 via 192.234.21.186
+192.234.21.64/27 via 192.234.21.186 (A4)
 - Network : 192.234.21.64
 - Mask : 255.255.255.224
 - Next Hop : 192.234.21.186
 
-192.234.19.0/24 via 192.234.21.186
+192.234.19.0/24 via 192.234.21.186 (A6)
 - Network : 192.234.19.0
 - Mask : 255.255.255.0
 - Next Hop : 192.234.21.186
 
-192.234.18.0/24 via 192.234.21.190
+192.234.18.0/24 via 192.234.21.190 (A10)
 - Network : 192.234.18.0
 - Mask : 255.255.255.0
 - Next Hop : 192.234.21.190
 
-192.234.16.0/23 via 192.234.21.190
+192.234.16.0/23 via 192.234.21.190 (A12)
 - Network : 192.234.16.0
 - Mask : 255.255.254.0
 - Next Hop : 192.234.21.190
 
-192.234.21.96/27 via 192.234.21.190
+192.234.21.96/27 via 192.234.21.190 (A14)
 - Network : 192.234.21.96
 - Mask : 255.255.255.224
 - Next Hop : 192.234.21.190
 
-192.234.0.0/21 via 192.234.21.190
+192.234.0.0/21 via 192.234.21.190 (A15)
 - Network : 192.234.0.0
 - Mask : 255.255.248.0
 - Next Hop : 192.234.21.190
 
-192.234.21.168/29 via 192.234.21.206
+192.234.21.168/29 via 192.234.21.206 (A18)
 - Network : 192.234.21.168
 - Mask : 255.255.255.248
 - Next Hop : 192.234.21.206
 
-192.234.21.0/26 via 192.234.21.206
+192.234.21.0/26 via 192.234.21.206 (A19)
 - Network : 192.234.21.0
 - Mask : 255.255.255.192
 - Next Hop : 192.234.21.206
 
-192.234.20.128/25 via 192.234.21.206
+192.234.20.128/25 via 192.234.21.206 (A20)
 - Network : 192.234.20.128
 - Mask : 255.255.255.128
 - Next Hop : 192.234.21.206
 
-192.234.8.0/21 via 192.234.21.206
+192.234.8.0/21 via 192.234.21.206 (A21)
 - Network : 192.234.8.0
 - Mask : 255.255.248.0
 - Next Hop : 192.234.21.206
@@ -214,22 +214,22 @@ Fast Ethernet1/0 (A5)
 Static Routes
 
 ```
-0.0.0.0/0 via 192.234.21.185
+0.0.0.0/0 via 192.234.21.185 (Default to JAWA)
 - Network : 0.0.0.0
 - Mask : 0.0.0.0
 - Next Hop : 192.234.21.185
 
-192.234.20.0/25 via 192.234.21.68
+192.234.20.0/25 via 192.234.21.68 (A1)
 - Network : 192.234.20.0
 - Mask : 255.255.255.128
 - Next Hop : 192.234.21.68
 
-192.234.21.128/27 via 192.234.21.68
+192.234.21.128/27 via 192.234.21.68 (A2)
 - Network : 192.234.21.128
 - Mask : 255.255.255.224
 - Next Hop : 192.234.21.68
 
-192.234.19.0/24 via 192.234.21.182
+192.234.19.0/24 via 192.234.21.182 (A6)
 - Network : 192.234.19.0
 - Mask : 255.255.255.0
 - Next Hop : 192.234.21.182
@@ -270,17 +270,17 @@ Fast Ethernet0/1 (A3)
 Static Routes
 
 ```
-0.0.0.0/0 via 192.234.21.65
+0.0.0.0/0 via 192.234.21.65 (Default to SUMATERA)
 - Network : 0.0.0.0
 - Mask : 0.0.0.0
 - Next Hop : 192.234.21.65
 
-192.234.20.0/25 via 192.234.21.178
+192.234.20.0/25 via 192.234.21.178 (A1)
 - Network : 192.234.20.0
 - Mask : 255.255.255.128
 - Next Hop : 192.234.21.178
 
-192.234.21.128/27 via 192.234.21.178
+192.234.21.128/27 via 192.234.21.178 (A2)
 - Network : 192.234.21.128
 - Mask : 255.255.255.224
 - Next Hop : 192.234.21.178
@@ -307,7 +307,7 @@ Fast Ethernet1/0 (A2)
 Static Routes
 
 ```
-0.0.0.0/0 via 192.234.21.177
+0.0.0.0/0 via 192.234.21.177 (Default to SUMATERA-UTARA)
 - Network : 0.0.0.0
 - Mask : 0.0.0.0
 - Next Hop : 192.234.21.177
@@ -375,7 +375,7 @@ Fast Ethernet0/1 (A6)
 Static Routes
 
 ```
-0.0.0.0/0 via 192.234.21.181
+0.0.0.0/0 via 192.234.21.181 (Default to SUMATERA)
 - Network : 0.0.0.0
 - Mask : 0.0.0.0
 - Next Hop : 192.234.21.181
@@ -416,27 +416,27 @@ Fast Ethernet0/1 (A9)
 Static Routes
 
 ```
-0.0.0.0/0 via 192.234.21.189
+0.0.0.0/0 via 192.234.21.189 (Default to JAWA)
 - Network : 0.0.0.0
 - Mask : 0.0.0.0
 - Next Hop : 192.234.21.189
 
-192.234.18.0/24 via 192.234.21.194
+192.234.18.0/24 via 192.234.21.194 (A10)
 - Network : 192.234.18.0
 - Mask : 255.255.255.0
 - Next Hop : 192.234.21.194
 
-192.234.16.0/24 via 192.234.21.194
+192.234.16.0/24 via 192.234.21.194 (A12)
 - Network : 192.234.16.0
 - Mask : 255.255.254.0
 - Next Hop : 192.234.21.194
 
-192.234.21.96/27 via 192.234.21.194
+192.234.21.96/27 via 192.234.21.194 (A14)
 - Network : 192.234.21.96
 - Mask : 255.255.255.224
 - Next Hop : 192.234.21.194
 
-192.234.0.0/21 via 192.234.21.194
+192.234.0.0/21 via 192.234.21.194 (A15)
 - Network : 192.234.0.0
 - Mask : 255.255.248.0
 - Next Hop : 192.234.21.194
@@ -463,22 +463,22 @@ Fast Ethernet1/0 (A11)
 Static Routes
 
 ```
-0.0.0.0/0 via 192.234.21.193
+0.0.0.0/0 via 192.234.21.193 (Default to KALIMANTAN)
 - Network : 0.0.0.0
 - Mask : 0.0.0.0
 - Next Hop : 192.234.21.193
 
-192.234.16.0/23 via 192.234.21.198
+192.234.16.0/23 via 192.234.21.198 (A12)
 - Network : 192.234.16.0
 - Mask : 255.255.254.0
 - Next Hop : 192.234.21.198
 
-192.234.21.96/27 via 192.234.21.198
+192.234.21.96/27 via 192.234.21.198 (A14)
 - Network : 192.234.21.96
 - Mask : 255.255.255.224
 - Next Hop : 192.234.21.198
 
-192.234.0.0/21 via 192.234.21.198
+192.234.0.0/21 via 192.234.21.198 (A15)
 - Network : 192.234.0.0
 - Mask : 255.255.248.0
 - Next Hop : 192.234.21.198
@@ -514,17 +514,17 @@ Fast Ethernet1/0 (A13)
 Static Routes
 
 ```
-0.0.0.0/0 via 192.234.21.197
+0.0.0.0/0 via 192.234.21.197 (Default to KALIMANTA-UTARA)
 - Network : 0.0.0.0
 - Mask : 0.0.0.0
 - Next Hop : 192.234.21.197
 
-192.234.21.96/27 via 192.234.21.202
+192.234.21.96/27 via 192.234.21.202 (A14)
 - Network : 192.234.21.96
 - Mask : 255.255.255.224
 - Next Hop : 192.234.21.202
 
-192.234.0.0/21 via 192.234.21.202
+192.234.0.0/21 via 192.234.21.202 (A15)
 - Network : 192.234.0.0
 - Mask : 255.255.248.0
 - Next Hop : 192.234.21.202
@@ -569,7 +569,7 @@ Fast Ethernet1/0 (A15)
 Static Routes
 
 ```
-0.0.0.0/0 via 192.234.21.201
+0.0.0.0/0 via 192.234.21.201 (Default to KALIMANTAN-TIMUR)
 - Network : 0.0.0.0
 - Mask : 0.0.0.0
 - Next Hop : 192.234.21.201
@@ -632,22 +632,22 @@ Fast Ethernet1/0 (A20)
 Static Routes
 
 ```
-0.0.0.0/0 via 192.234.21.205
+0.0.0.0/0 via 192.234.21.205 (Default to JAWA)
 - Network : 0.0.0.0
 - Mask : 0.0.0.0
 - Next Hop : 192.234.21.205
 
-192.234.21.0/26 via 192.234.21.162
+192.234.21.0/26 via 192.234.21.162 (A19)
 - Network : 192.234.21.0
 - Mask : 255.255.255.192
 - Next Hop : 192.234.21.162
 
-192.234.21.168/29 via 192.234.21.163
+192.234.21.168/29 via 192.234.21.163 (A20)
 - Network : 192.234.21.168
 - Mask : 255.255.255.248
 - Next Hop : 192.234.21.163
 
-192.234.8.0/21 via 192.234.20.132
+192.234.8.0/21 via 192.234.20.132 (A21)
 - Network : 192.234.8.0
 - Mask : 255.255.248.0
 - Next Hop : 192.234.20.132
@@ -688,7 +688,7 @@ Fast Ethernet0/1 (A19)
 Static Routes
 
 ```
-0.0.0.0/0 via 192.234.21.161
+0.0.0.0/0 via 192.234.21.161 (Default to SULAWESI)
 - Network : 0.0.0.0
 - Mask : 0.0.0.0
 - Next Hop : 192.234.21.161
@@ -729,7 +729,7 @@ Fast Ethernet0/1 (A18)
 Static Routes
 
 ```
-0.0.0.0/0 via 192.234.21.161
+0.0.0.0/0 via 192.234.21.161 (Default to SULAWESI)
 - Network : 0.0.0.0
 - Mask : 0.0.0.0
 - Next Hop : 192.234.21.161
@@ -770,7 +770,7 @@ Fast Ethernet0/1 (A21)
 Static Routes
 
 ```
-0.0.0.0/0 via 192.234.20.129
+0.0.0.0/0 via 192.234.20.129 (Default to SULAWESI)
 - Network : 0.0.0.0
 - Mask : 0.0.0.0
 - Next Hop : 192.234.20.129
@@ -1215,4 +1215,463 @@ Berikut adalah tabel subnet berdasarkan penggabungan yang telah dilakukan
 
 ### Pembagian IP
 
+Prefix IP : **192.234**
+
+| Subnet | Network ID     | Netmask         | Broadcast      | Range IP                        |
+| ------ | -------------- | --------------- | -------------- | ------------------------------- |
+| A1     | 192.238.64.0   | 255.255.255.128 | 192.238.64.127 | 192.238.64.1 - 192.238.64.126   |
+| A2     | 192.238.64.128 | 255.255.255.224 | 192.234.21.159 | 192.238.64.129 - 192.238.64.158 |
+| A3     | 192.238.64.160 | 255.255.255.252 | 192.234.21.179 | 192.238.0.161 - 192.238.0.162   |
+| A4     | 192.238.64.164 | 255.255.255.224 | 192.234.21.95  | 192.238.0.165 - 192.238.0.194   |
+| A5     | 192.238.69.0   | 255.255.255.252 | 192.234.21.183 | 192.238.69.1 - 192.238.69.2     |
+| A6     | 192.238.68.0   | 255.255.255.0   | 192.234.19.255 | 192.238.68.1 192.238.68.254     |
+| A7     | 192.238.64.196 | 255.255.255.252 | 192.234.21.187 | 192.238.64.197 - 192.238.64.198 |
+| A8     | 192.234.8.28   | 255.255.255.252 | 192.234.21.188 | 192.234.8.29- 192.234.8.30      |
+| A9     | 192.234.8.24   | 255.255.255.252 | 192.234.21.195 | 192.234.8.25- 192.234.8.26      |
+| A10    | 192.234.11.0   | 255.255.255.0   | 192.234.18.255 | 192.234.11.1 - 192.234.11.254   |
+| A11    | 192.234.8.20   | 255.255.255.252 | 192.234.21.199 | 192.234.8.21 - 192.234.8.22     |
+| A12    | 192.234.9.0    | 255.255.254.0   | 192.234.16.255 | 192.234.9.1 - 192.234.10.254    |
+| A13    | 192.234.8.16   | 255.255.255.252 | 192.234.21.203 | 192.234.8.17 - 192.234.8.18     |
+| A14    | 192.234.8.0    | 255.255.255.240 | 192.234.21.127 | 192.234.8.1 - 192.234.8.14      |
+| A15    | 192.234.0.0    | 255.255.248.0   | 192.234.7.255  | 192.234.0.1 - 192.234.7.254     |
+| A16    | 192.238.8.128  | 255.255.255.252 | 192.234.21.207 | 192.238.129 - 192.238.130       |
+| A17    | 192.238.16.72  | 255.255.255.248 | 192.234.21.167 | 192.238.16.73 - 192.238.16.78   |
+| A18    | 192.238.16.64  | 255.255.255.248 | 192.234.21.175 | 192.238.16.65 - 192.238.16.70   |
+| A19    | 192.238.16.0   | 255.255.255.192 | 192.234.21.63  | 192.238.16.1 - 192.238.16.63    |
+| A20    | 192.238.8.0    | 255.255.255.192 | 192.234.20.255 | 192.238.8.1 - 192.238.8.126     |
+| A21    | 192.238.0.0    | 255.255.252.0   | 192.234.15.255 | 192.238.0.1 - 192.238.7.254     |
+
 ### Konfigurasi
+
+#### JAWA (Gateway)
+
+```
+auto eth0
+iface eth0 inet dhcp
+
+# A<berapa>
+auto eth1
+iface eth1 inet static
+	address
+	netmask
+```
+
+#### SUMATERA (Gateway)
+
+```
+# A<berapa>
+auto eth0
+iface eth0 inet dhcp
+
+# A<berapa>
+auto eth1
+iface eth1 inet static
+	address
+	netmask
+```
+
+#### Samosir (Client)
+
+```
+auto eth0
+iface eth0 inet static
+	address
+	netmask
+	gateway
+```
+
+#### Sibandang (Client)
+
+```
+auto eth0
+iface eth0 inet static
+	address
+	netmask
+	gateway
+```
+
+#### SUMATERA-UTARA (Gateway)
+
+```
+# A<berapa>
+auto eth0
+iface eth0 inet dhcp
+
+# A<berapa>
+auto eth1
+iface eth1 inet static
+	address
+	netmask
+```
+
+#### ACEH (Gateway)
+
+```
+# A<berapa>
+auto eth0
+iface eth0 inet dhcp
+
+# A<berapa>
+auto eth1
+iface eth1 inet static
+	address
+	netmask
+```
+
+#### Berawang Tampu (Client)
+
+```
+auto eth0
+iface eth0 inet static
+	address
+	netmask
+	gateway
+```
+
+#### Enang-Enang (Client)
+
+```
+auto eth0
+iface eth0 inet static
+	address
+	netmask
+	gateway
+```
+
+#### Starland (Client)
+
+```
+auto eth0
+iface eth0 inet static
+	address
+	netmask
+	gateway
+```
+
+#### Sabang (Client)
+
+```
+auto eth0
+iface eth0 inet static
+	address
+	netmask
+	gateway
+```
+
+#### LAMPUNG (Gateway)
+
+```
+# A<berapa>
+auto eth0
+iface eth0 inet dhcp
+
+# A<berapa>
+auto eth1
+iface eth1 inet static
+	address
+	netmask
+```
+
+#### Sebuku (Client)
+
+```
+auto eth0
+iface eth0 inet static
+	address
+	netmask
+	gateway
+```
+
+#### Sebesi (Server)
+
+```
+auto eth0
+iface eth0 inet static
+	address
+	netmask
+	gateway
+```
+
+#### KALIMANTAN (Gateway)
+
+```
+# A<berapa>
+auto eth0
+iface eth0 inet dhcp
+
+# A<berapa>
+auto eth1
+iface eth1 inet static
+	address
+	netmask
+```
+
+#### KALIMANTAN-UTARA (Gateway)
+
+```
+# A<berapa>
+auto eth0
+iface eth0 inet dhcp
+
+# A<berapa>
+auto eth1
+iface eth1 inet static
+	address
+	netmask
+```
+
+#### Selimau (Client)
+
+```
+auto eth0
+iface eth0 inet static
+	address
+	netmask
+	gateway
+```
+
+#### KALIMANTAN-TIMUR (Gateway)
+
+```
+# A<berapa>
+auto eth0
+iface eth0 inet dhcp
+
+# A<berapa>
+auto eth1
+iface eth1 inet static
+	address
+	netmask
+```
+
+#### Bangkirai (Server)
+
+```
+auto eth0
+iface eth0 inet static
+	address
+	netmask
+	gateway
+```
+
+#### Lamaru (Client)
+
+```
+auto eth0
+iface eth0 inet static
+	address
+	netmask
+	gateway
+```
+
+#### KALIMANTAN-SELATAN (Gateway)
+
+```
+# A<berapa>
+auto eth0
+iface eth0 inet dhcp
+
+# A<berapa>
+auto eth1
+iface eth1 inet static
+	address
+	netmask
+```
+
+#### Angsana (Client)
+
+```
+auto eth0
+iface eth0 inet static
+	address
+	netmask
+	gateway
+```
+
+#### Bajuin (Client)
+
+```
+auto eth0
+iface eth0 inet static
+	address
+	netmask
+	gateway
+```
+
+#### Takisung (Client)
+
+```
+auto eth0
+iface eth0 inet static
+	address
+	netmask
+	gateway
+```
+
+#### Batakan (Client)
+
+```
+auto eth0
+iface eth0 inet static
+	address
+	netmask
+	gateway
+```
+
+#### SULAWESI (Gateway)
+
+```
+# A<berapa>
+auto eth0
+iface eth0 inet dhcp
+
+# A<berapa>
+auto eth1
+iface eth1 inet static
+	address
+	netmask
+```
+
+#### PC-Gorontalo (Client)
+
+```
+auto eth0
+iface eth0 inet static
+	address
+	netmask
+	gateway
+```
+
+#### PC-Marisa (Client)
+
+```
+auto eth0
+iface eth0 inet static
+	address
+	netmask
+	gateway
+```
+
+#### BELAWA (Gateway)
+
+```
+# A<berapa>
+auto eth0
+iface eth0 inet dhcp
+
+# A<berapa>
+auto eth1
+iface eth1 inet static
+	address
+	netmask
+```
+
+#### Madini (Client)
+
+```
+auto eth0
+iface eth0 inet static
+	address
+	netmask
+	gateway
+```
+
+#### Baru (Client)
+
+```
+auto eth0
+iface eth0 inet static
+	address
+	netmask
+	gateway
+```
+
+#### MAKASAR (Gateway)
+
+```
+# A<berapa>
+auto eth0
+iface eth0 inet dhcp
+
+# A<berapa>
+auto eth1
+iface eth1 inet static
+	address
+	netmask
+```
+
+#### Galesong (Server)
+
+```
+auto eth0
+iface eth0 inet static
+	address
+	netmask
+	gateway
+```
+
+#### Topejawa-Takalar (Server)
+
+```
+auto eth0
+iface eth0 inet static
+	address
+	netmask
+	gateway
+```
+
+#### MALUKU-UTARA (Gateway)
+
+```
+# A<berapa>
+auto eth0
+iface eth0 inet dhcp
+
+# A<berapa>
+auto eth1
+iface eth1 inet static
+	address
+	netmask
+```
+
+#### Tobelo (Client)
+
+```
+auto eth0
+iface eth0 inet static
+	address
+	netmask
+	gateway
+```
+
+#### Morotai (Server)
+
+```
+auto eth0
+iface eth0 inet static
+	address
+	netmask
+	gateway
+```
+
+#### Ternate (Client)
+
+```
+auto eth0
+iface eth0 inet static
+	address
+	netmask
+	gateway
+```
+
+### Testing
+
+Ternate ke Enang-Enang
+
+Sebesi ke Madini
+
+Takisung ke Galesong
+
+Lamaru ke Samosir
+
+Selimau PC-Marisa
