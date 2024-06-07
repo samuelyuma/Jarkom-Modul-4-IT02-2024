@@ -833,19 +833,39 @@ PC-Marisa ke Selimau
 
 #### Langkah 1
 
+![1](./assets/penggabungan-1.png)
+
 #### Langkah 2
+
+![2](./assets/penggabungan-2.png)
 
 #### Langkah 3
 
+![3](./assets/penggabungan-3.png)
+
 #### Langkah 4
+
+![4](./assets/penggabungan-4.png)
 
 #### Langkah 5
 
+![5](./assets/penggabungan-5.png)
+
 #### Langkah 6
+
+![6](./assets/penggabungan-6.png)
 
 #### Langkah 7
 
+![7](./assets/penggabungan-7.png)
+
 #### Langkah 8
+
+![8](./assets/penggabungan-8.png)
+
+#### Langkah 9
+
+![9](./assets/penggabungan-9.png)
 
 Berikut adalah tabel subnet berdasarkan penggabungan yang telah dilakukan
 
