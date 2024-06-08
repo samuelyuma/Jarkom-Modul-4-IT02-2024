@@ -874,6 +874,8 @@ PC-Marisa ke Selimau
 
 ### Topologi
 
+![TopoCIDR](https://github.com/samuelyuma/Jarkom-Modul-4-IT02-2024/assets/143835215/cec6ebaf-5581-4aa8-acc4-e46d4bbf2d9f)
+
 ### Penggabungan
 
 #### Langkah 1
@@ -1285,458 +1287,619 @@ Prefix IP : **192.234**
 | Subnet | Network ID     | Netmask         | Broadcast      | Range IP                        |
 | ------ | -------------- | --------------- | -------------- | ------------------------------- |
 | A1     | 192.238.64.0   | 255.255.255.128 | 192.238.64.127 | 192.238.64.1 - 192.238.64.126   |
-| A2     | 192.238.64.128 | 255.255.255.224 | 192.234.21.159 | 192.238.64.129 - 192.238.64.158 |
-| A3     | 192.238.64.160 | 255.255.255.252 | 192.234.21.179 | 192.238.0.161 - 192.238.0.162   |
-| A4     | 192.238.64.164 | 255.255.255.224 | 192.234.21.95  | 192.238.0.165 - 192.238.0.194   |
-| A5     | 192.238.69.0   | 255.255.255.252 | 192.234.21.183 | 192.238.69.1 - 192.238.69.2     |
-| A6     | 192.238.68.0   | 255.255.255.0   | 192.234.19.255 | 192.238.68.1 192.238.68.254     |
-| A7     | 192.238.64.196 | 255.255.255.252 | 192.234.21.187 | 192.238.64.197 - 192.238.64.198 |
-| A8     | 192.234.8.28   | 255.255.255.252 | 192.234.21.188 | 192.234.8.29- 192.234.8.30      |
-| A9     | 192.234.8.24   | 255.255.255.252 | 192.234.21.195 | 192.234.8.25- 192.234.8.26      |
-| A10    | 192.234.11.0   | 255.255.255.0   | 192.234.18.255 | 192.234.11.1 - 192.234.11.254   |
-| A11    | 192.234.8.20   | 255.255.255.252 | 192.234.21.199 | 192.234.8.21 - 192.234.8.22     |
-| A12    | 192.234.9.0    | 255.255.254.0   | 192.234.16.255 | 192.234.9.1 - 192.234.10.254    |
-| A13    | 192.234.8.16   | 255.255.255.252 | 192.234.21.203 | 192.234.8.17 - 192.234.8.18     |
-| A14    | 192.234.8.0    | 255.255.255.240 | 192.234.21.127 | 192.234.8.1 - 192.234.8.14      |
+| A2     | 192.238.64.128 | 255.255.255.224 | 192.238.64.159 | 192.238.64.129 - 192.238.64.158 |
+| A3     | 192.238.64.160 | 255.255.255.252 | 192.238.64.163 | 192.238.0.161 - 192.238.0.162   |
+| A4     | 192.238.64.164 | 255.255.255.224 | 192.238.64.195 | 192.238.0.165 - 192.238.0.194   |
+| A5     | 192.238.69.0   | 255.255.255.252 | 192.238.69.3   | 192.238.69.1 - 192.238.69.2     |
+| A6     | 192.238.68.0   | 255.255.255.0   | 192.238.68.255 | 192.238.68.1 192.238.68.254     |
+| A7     | 192.238.64.196 | 255.255.255.252 | 192.238.64.199 | 192.238.64.197 - 192.238.64.198 |
+| A8     | 192.234.8.28   | 255.255.255.252 | 192.234.8.31   | 192.234.8.29- 192.234.8.30      |
+| A9     | 192.234.8.24   | 255.255.255.252 | 192.234.8.27   | 192.234.8.25- 192.234.8.26      |
+| A10    | 192.234.11.0   | 255.255.255.0   | 192.234.11.255 | 192.234.11.1 - 192.234.11.254   |
+| A11    | 192.234.8.20   | 255.255.255.252 | 192.234.8.23   | 192.234.8.21 - 192.234.8.22     |
+| A12    | 192.234.9.0    | 255.255.254.0   | 192.234.10.255 | 192.234.9.1 - 192.234.10.254    |
+| A13    | 192.234.8.16   | 255.255.255.252 | 192.234.8.19   | 192.234.8.17 - 192.234.8.18     |
+| A14    | 192.234.8.0    | 255.255.255.240 | 192.234.8.15   | 192.234.8.1 - 192.234.8.14      |
 | A15    | 192.234.0.0    | 255.255.248.0   | 192.234.7.255  | 192.234.0.1 - 192.234.7.254     |
-| A16    | 192.238.8.128  | 255.255.255.252 | 192.234.21.207 | 192.238.129 - 192.238.130       |
-| A17    | 192.238.16.72  | 255.255.255.248 | 192.234.21.167 | 192.238.16.73 - 192.238.16.78   |
-| A18    | 192.238.16.64  | 255.255.255.248 | 192.234.21.175 | 192.238.16.65 - 192.238.16.70   |
-| A19    | 192.238.16.0   | 255.255.255.192 | 192.234.21.63  | 192.238.16.1 - 192.238.16.63    |
-| A20    | 192.238.8.0    | 255.255.255.192 | 192.234.20.255 | 192.238.8.1 - 192.238.8.126     |
-| A21    | 192.238.0.0    | 255.255.252.0   | 192.234.15.255 | 192.238.0.1 - 192.238.7.254     |
+| A16    | 192.238.8.128  | 255.255.255.252 | 192.238.8.131  | 192.238.129 - 192.238.130       |
+| A17    | 192.238.16.72  | 255.255.255.248 | 192.238.16.79  | 192.238.16.73 - 192.238.16.78   |
+| A18    | 192.238.16.64  | 255.255.255.248 | 192.238.16.71  | 192.238.16.65 - 192.238.16.70   |
+| A19    | 192.238.16.0   | 255.255.255.192 | 192.238.16.63  | 192.238.16.1 - 192.238.16.63    |
+| A20    | 192.238.8.0    | 255.255.255.192 | 192.238.8.127  | 192.238.8.1 - 192.238.8.126     |
+| A21    | 192.238.0.0    | 255.255.252.0   | 192.268.7.255  | 192.238.0.1 - 192.238.7.254     |
 
 ### Konfigurasi
 
 #### JAWA (Gateway)
 
 ```
-auto eth0
-iface eth0 inet dhcp
-
-# A<berapa>
+#A7
 auto eth1
 iface eth1 inet static
-	address
-	netmask
+    address 192.238.64.197
+    netmask 255.255.255.252
+
+#A8
+auto eth2
+iface eth2 inet static
+    address 192.234.8.29
+    netmask 255.255.255.252
+
+#A16
+auto eth3
+iface eth3 inet static
+    address 192.238.8.129
+    netmask 255.255.255.252
 ```
 
 #### SUMATERA (Gateway)
 
 ```
-# A<berapa>
+#A7
 auto eth0
-iface eth0 inet dhcp
+iface eth0 inet static
+    address 192.238.64.198
+    netmask 255.255.255.252
+    gateway 192.238.64.197
 
-# A<berapa>
+#A5
 auto eth1
 iface eth1 inet static
-	address
-	netmask
+    address 192.238.69.1
+    netmask 255.255.255.252
+
+#A4
+auto eth2
+iface eth2 inet static
+    address 192.238.64.165
+    netmask 255.255.255.224
 ```
 
 #### Samosir (Client)
 
 ```
+#A4
 auto eth0
 iface eth0 inet static
-	address
-	netmask
-	gateway
+    address 192.238.64.167
+    netmask 255.255.255.224
+    gateway 192.238.64.165
 ```
 
 #### Sibandang (Client)
 
 ```
+#A4
 auto eth0
 iface eth0 inet static
-	address
-	netmask
-	gateway
+    address 192.238.64.168
+    netmask 255.255.255.224
+    gateway 192.238.64.165
 ```
 
 #### SUMATERA-UTARA (Gateway)
 
 ```
-# A<berapa>
+#A4
 auto eth0
-iface eth0 inet dhcp
+iface eth0 inet static
+    address 192.238.64.166
+    netmask 255.255.255.224
+    gateway 192.238.64.165
 
-# A<berapa>
 auto eth1
 iface eth1 inet static
-	address
-	netmask
+    address 192.238.64.161
+    netmask 255.255.255.252
 ```
 
 #### ACEH (Gateway)
 
 ```
-# A<berapa>
-auto eth0
-iface eth0 inet dhcp
-
-# A<berapa>
+#A1
 auto eth1
 iface eth1 inet static
-	address
-	netmask
+    address 192.234.64.1
+    netmask 255.255.255.128
+
+#A2
+auto eth2
+iface eth2 inet static
+    address 192.238.64.129
+    netmask 255.255.255.224
 ```
 
 #### Berawang Tampu (Client)
 
 ```
+#A1
 auto eth0
 iface eth0 inet static
-	address
-	netmask
-	gateway
+    address 192.234.64.2
+    netmask 255.255.255.128
+    gateway 192.234.64.1
 ```
 
 #### Enang-Enang (Client)
 
 ```
+#A1
 auto eth0
 iface eth0 inet static
-	address
-	netmask
-	gateway
+    address 192.234.64.3
+    netmask 255.255.255.128
+    gateway 192.234.64.1
+
 ```
 
 #### Starland (Client)
 
 ```
+#A1
 auto eth0
 iface eth0 inet static
-	address
-	netmask
-	gateway
+    address 192.234.64.4
+    netmask 255.255.255.128
+    gateway 192.234.64.1
 ```
 
 #### Sabang (Client)
 
 ```
+#A2
 auto eth0
 iface eth0 inet static
-	address
-	netmask
-	gateway
+    address 192.238.64.130
+    netmask 255.255.255.224
+    gateway 192.238.64.129
 ```
 
 #### LAMPUNG (Gateway)
 
 ```
-# A<berapa>
+#A5
 auto eth0
-iface eth0 inet dhcp
+iface eth0 inet static
+    address 192.238.69.2
+    netmask 255.255.255.252
+    gateway 192.238.69.1
 
-# A<berapa>
+#A6
 auto eth1
 iface eth1 inet static
-	address
-	netmask
+    address 192.238.68.1
+    netmask 255.255.255.0
 ```
 
 #### Sebuku (Client)
 
 ```
+#A6
 auto eth0
 iface eth0 inet static
-	address
-	netmask
-	gateway
+    address 192.238.68.2
+    netmask 255.255.255.0
+    gateway 192.238.68.1
 ```
 
 #### Sebesi (Server)
 
 ```
+#A6
 auto eth0
 iface eth0 inet static
-	address
-	netmask
-	gateway
+    address 192.238.68.3
+    netmask 255.255.255.0
+    gateway 192.238.68.1
 ```
 
 #### KALIMANTAN (Gateway)
 
 ```
-# A<berapa>
+#A8
 auto eth0
-iface eth0 inet dhcp
+iface eth0 inet static
+    address 192.234.8.30
+    netmask 255.255.255.252
+    gateway 192.234.8.29
 
-# A<berapa>
+#A9
 auto eth1
 iface eth1 inet static
-	address
-	netmask
+    address 192.234.8.25
+    netmask 255.255.255.252
 ```
 
 #### KALIMANTAN-UTARA (Gateway)
 
 ```
-# A<berapa>
+#A9
 auto eth0
-iface eth0 inet dhcp
+iface eth0 inet static
+    address 192.234.8.26
+    netmask 255.255.255.252
+    gateway 192.234.8.25
 
-# A<berapa>
+#A10
 auto eth1
 iface eth1 inet static
-	address
-	netmask
+    address 192.234.11.1
+    netmask 255.255.255.0
+#A11
+auto eth2
+iface eth2 inet static
+    address 192.234.8.21
+    netmask 255.255.255.252
 ```
 
 #### Selimau (Client)
 
 ```
+#A10
 auto eth0
 iface eth0 inet static
-	address
-	netmask
-	gateway
+    address 192.234.11.2
+    netmask 255.255.255.0
+    gateway 192.234.11.1
 ```
 
 #### KALIMANTAN-TIMUR (Gateway)
 
 ```
-# A<berapa>
+#A11
 auto eth0
-iface eth0 inet dhcp
+iface eth0 inet static
+    address 192.234.8.22
+    netmask 255.255.255.252
+    gateway 192.234.8.21
 
-# A<berapa>
+#A13
 auto eth1
 iface eth1 inet static
-	address
-	netmask
+    address 192.234.8.17
+    netmask 255.255.255.252
+
+#A12
+auto eth2
+iface eth2 inet static
+    address 192.234.9.1
+    netmask 255.255.254.0
 ```
 
 #### Bangkirai (Server)
 
 ```
+#A12
 auto eth0
 iface eth0 inet static
-	address
-	netmask
-	gateway
+    address 192.234.9.2
+    netmask 255.255.254.0
+    gateway 192.234.9.1
 ```
 
 #### Lamaru (Client)
 
 ```
+#A12
 auto eth0
 iface eth0 inet static
-	address
-	netmask
-	gateway
+    address 192.234.9.3
+    netmask 255.255.254.0
+    gateway 192.234.9.1
 ```
 
 #### KALIMANTAN-SELATAN (Gateway)
 
 ```
-# A<berapa>
+#A13
 auto eth0
-iface eth0 inet dhcp
+iface eth0 inet static
+    address 192.234.8.18
+    netmask 255.255.255.252
+    gateway 192.234.8.17
 
-# A<berapa>
+#A14
 auto eth1
 iface eth1 inet static
-	address
-	netmask
+    address 192.234.8.1
+    netmask 255.255.255.240
+
+#A15
+auto eth2
+iface eth2 inet static
+    address 192.234.0.1
+    netmask 255.255.248.0
+
 ```
 
 #### Angsana (Client)
 
 ```
+#A14
 auto eth0
 iface eth0 inet static
-	address
-	netmask
-	gateway
+    address 192.234.8.2
+    netmask 255.255.255.240
+    gateway 192.234.8.1
 ```
 
 #### Bajuin (Client)
 
 ```
+#A15
 auto eth0
 iface eth0 inet static
-	address
-	netmask
-	gateway
+    address 192.234.0.2
+    netmask 255.255.248.0
+    gateway 192.234.0.1
 ```
 
 #### Takisung (Client)
 
 ```
+#A15
 auto eth0
 iface eth0 inet static
-	address
-	netmask
-	gateway
+    address 192.234.0.3
+    netmask 255.255.248.0
+    gateway 192.234.0.1
 ```
 
 #### Batakan (Client)
 
 ```
+#A15
 auto eth0
 iface eth0 inet static
-	address
-	netmask
-	gateway
+    address 192.234.0.4
+    netmask 255.255.248.0
+    gateway 192.234.0.1
 ```
 
 #### SULAWESI (Gateway)
 
 ```
-# A<berapa>
+#A16
 auto eth0
-iface eth0 inet dhcp
+iface eth0 inet static
+    address 192.238.8.130
+    netmask 255.255.255.252
+    gateway 192.238.8.129
 
-# A<berapa>
+#A17
 auto eth1
 iface eth1 inet static
-	address
-	netmask
+    address 192.238.16.73
+    netmask 255.255.255.128
+
+#A20
+auto eth2
+iface eth2 inet static
+    address 192.238.8.1
+    netmask 255.255.255.248
 ```
 
 #### PC-Gorontalo (Client)
 
 ```
+#A20
 auto eth0
 iface eth0 inet static
-	address
-	netmask
-	gateway
+    address 192.238.8.2
+    netmask 255.255.255.128
+    gateway 192.238.8.1
 ```
 
 #### PC-Marisa (Client)
 
 ```
+#A20
 auto eth0
 iface eth0 inet static
-	address
-	netmask
-	gateway
+    address 192.238.8.3
+    netmask 255.255.255.128
+    gateway 192.238.8.1
 ```
 
 #### BELAWA (Gateway)
 
 ```
-# A<berapa>
+#A17
 auto eth0
-iface eth0 inet dhcp
+iface eth0 inet static
+    address 192.238.16.75
+    netmask 255.255.255.248
+    gateway 192.238.16.73
 
-# A<berapa>
+#A19
 auto eth1
 iface eth1 inet static
-	address
-	netmask
+    address 192.238.16.1
+    netmask 255.255.255.192
 ```
 
 #### Madini (Client)
 
 ```
+#A19
 auto eth0
 iface eth0 inet static
-	address
-	netmask
-	gateway
+    address 192.238.16.2
+    netmask 255.255.255.192
+    gateway 192.238.16.1
 ```
 
 #### Baru (Client)
 
 ```
+#A19
 auto eth0
 iface eth0 inet static
-	address
-	netmask
-	gateway
+    address 192.238.16.3
+    netmask 255.255.255.192
+    gateway 192.238.16.1
 ```
 
 #### MAKASAR (Gateway)
 
 ```
-# A<berapa>
+#A17
 auto eth0
-iface eth0 inet dhcp
+iface eth0 inet static
+    address 192.238.16.74
+    netmask 255.255.255.248
+    gateway 192.238.16.73
 
-# A<berapa>
+#A18
 auto eth1
 iface eth1 inet static
-	address
-	netmask
+    address 192.238.16.65
+    netmask 255.255.255.248
 ```
 
 #### Galesong (Server)
 
 ```
+#A18
 auto eth0
 iface eth0 inet static
-	address
-	netmask
-	gateway
+    address 192.238.16.66
+    netmask 255.255.255.248
+    gateway 192.238.16.65
 ```
 
 #### Topejawa-Takalar (Server)
 
 ```
+#A18
 auto eth0
 iface eth0 inet static
-	address
-	netmask
-	gateway
+    address 192.238.16.67
+    netmask 255.255.255.248
+    gateway 192.238.16.65
 ```
 
 #### MALUKU-UTARA (Gateway)
 
 ```
-# A<berapa>
+#A20
 auto eth0
-iface eth0 inet dhcp
+iface eth0 inet static
+    address 192.238.8.4
+    netmask 255.255.255.128
+    gateway 192.238.8.1
 
-# A<berapa>
+#A21
 auto eth1
 iface eth1 inet static
-	address
-	netmask
+    address 192.238.0.1
+    netmask 255.255.254.0
 ```
 
 #### Tobelo (Client)
 
 ```
+#A21
 auto eth0
 iface eth0 inet static
-	address
-	netmask
-	gateway
+    address 192.238.0.2
+    netmask 255.255.248.0
+    gateway 192.238.0.1
 ```
 
 #### Morotai (Server)
 
 ```
+#A21
 auto eth0
 iface eth0 inet static
-	address
-	netmask
-	gateway
+    address 192.238.0.3
+    netmask 255.255.248.0
+    gateway 192.238.0.1
 ```
 
 #### Ternate (Client)
 
 ```
+#A21
 auto eth0
 iface eth0 inet static
-	address
-	netmask
-	gateway
+    address 192.238.0.4
+    netmask 255.255.248.0
+    gateway 192.238.0.1
+```
+
+
+### Konfigurasi Routing
+
+#### Jawa
+
+```
+route add -net 192.238.64.164 netmask 255.255.255.224 gw 192.238.64.198
+route add -net 192.238.69.0 netmask 255.255.255.252 gw 192.238.64.198
+route add -net 192.234.8.24 netmask 255.255.255.252 gw 192.234.8.30
+route add -net 192.238.8.0 netmask 255.255.255.128 gw 192.238.8.130
+route add -net 192.238.16.72 netmask 255.255.255.248 gw 192.238.8.130
+```
+
+#### Sulawesi
+
+```
+route add -net 192.238.0.0 netmask 255.255.248.0 gw 192.238.8.4
+route add -net 192.238.16.0 netmask 255.255.255.192 gw 192.238.16.75
+route add -net 192.238.16.64 netmask 255.255.255.248 gw 192.238.16.74
+```
+
+#### Sumatra
+
+```
+route add -net 192.238.64.164 netmask 255.255.255.224 gw 192.238.64.166
+route add -net 192.238.68.0 netmask 255.255.255.0 gw 192.238.69.2
+```
+
+#### Sumatra Utara
+
+```
+route add -net 192.238.64.0 netmask 255.255.255.128 gw 192.238.64.162
+route add -net 192.238.64.128 netmask 255.255.255.224 gw 192.238.64.162
+```
+
+#### Kalimantan
+
+```
+route add -net 192.234.11.0 netmask 255.255.255.0 gw 192.234.8.26
+route add -net 192.234.8.20 netmask 255.255.255.252 gw 192.234.8.26
+```
+
+#### Kalimantan Utara
+
+```
+route add -net 192.234.9.0 netmask 255.255.254.0 gw 192.234.8.22
+route add -net 192.234.8.16 netmask 255.255.255.252 gw 192.234.8.22
+```
+
+#### Kalimantan Timur
+
+```
+route add -net 192.234.0.0 netmask 255.255.248.0 gw 192.234.8.18
+route add -net 192.234.8.0 netmask 255.255.255.240 gw 192.234.8.18
 ```
 
 ### Testing
 
-Ternate ke Enang-Enang
+Galesong ke Tobelo
 
-Sebesi ke Madini
+![PingGale](https://github.com/samuelyuma/Jarkom-Modul-4-IT02-2024/assets/143835215/58e4b1fc-b615-4fb4-9085-5d1932bf44a9)
 
-Takisung ke Galesong
+Sumatera ke Sulawesi
 
-Lamaru ke Samosir
+![PingSumatra](https://github.com/samuelyuma/Jarkom-Modul-4-IT02-2024/assets/143835215/d9cb8566-6230-4322-92f8-159a9692b7a0)
 
-Selimau PC-Marisa
+Kalimantan ke Selimau
+
+![PingKalimantan](https://github.com/samuelyuma/Jarkom-Modul-4-IT02-2024/assets/143835215/64879254-35e6-4d50-b141-1effd5af3d1d)
+
+Sumatera ke Sebuku
+
+![Ping Sebuku](https://github.com/samuelyuma/Jarkom-Modul-4-IT02-2024/assets/143835215/15559a62-a83d-43ed-9212-90f70e262bec)
+
