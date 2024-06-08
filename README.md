@@ -1195,7 +1195,7 @@ Berikut adalah tabel subnet berdasarkan penggabungan yang telah dilakukan
       <td>/20</td>
       <td>E3</td>
       <td>/18</td>
-      <td>/19</td>
+      <td>/17</td>
     </tr>
     <tr>
       <td>G2</td>
@@ -1268,7 +1268,7 @@ Berikut adalah tabel subnet berdasarkan penggabungan yang telah dilakukan
       <td>H1</td>
       <td>/14</td>
       <td>G1</td>
-      <td>/19</td>
+      <td>/17</td>
       <td>/13</td>
     </tr>
   </tbody>
